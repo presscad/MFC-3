@@ -7,6 +7,8 @@
 
 #include "../MFC_uart1/CSerialPort/SerialPort.h"
 
+#include "ClearDlg.h"
+
 
 // CMFC_uart1Dlg 对话框
 class CMFC_uart1Dlg : public CDialogEx
@@ -14,6 +16,8 @@ class CMFC_uart1Dlg : public CDialogEx
 // 构造
 public:
 	CMFC_uart1Dlg(CWnd* pParent = NULL);	// 标准构造函数
+
+	~CMFC_uart1Dlg();	// 标准构造函数
 
 // 对话框数据
 #ifdef AFX_DESIGN_TIME
@@ -60,5 +64,6 @@ private:
 	CEdit m_edit_receive_control;
 
 
+	CClearDlg * m_pClearTlg;
 
 };
