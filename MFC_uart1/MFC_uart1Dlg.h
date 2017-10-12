@@ -53,7 +53,7 @@ public:
 private:
 	CString m_edit_receive;
 	CString m_edit_send;
-	CComboBox m_comb_select;
+	CComboBox m_comb_select; 
 	CComboBox m_comb_baudrate;
 
 	
@@ -64,6 +64,6 @@ private:
 	CEdit m_edit_receive_control;
 
 
-	CClearDlg * m_pClearTlg;
+	CClearDlg * m_pClearTlg;//非模态对话框指针
 
 };
