@@ -8,6 +8,7 @@
 #include "../MFC_uart1/CSerialPort/SerialPort.h"
 
 #include "ClearDlg.h"
+#include "afxcmn.h"
 
 
 // CMFC_uart1Dlg 对话框
@@ -47,6 +48,9 @@ public:
 	
 	afx_msg LRESULT OnComm(WPARAM ch, LPARAM port);
 
+	afx_msg void OnNMCustomdrawSlider1(NMHDR *pNMHDR, LRESULT *pResult);//自定义 slider 消息处理函数
+
+
 	afx_msg void OnClose();
 
 
@@ -66,4 +70,7 @@ private:
 
 	CClearDlg * m_pClearTlg;//非模态对话框指针
 
+public:
+	CSliderCtrl m_slider_1;
 };
+
