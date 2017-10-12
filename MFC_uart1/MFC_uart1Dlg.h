@@ -45,7 +45,7 @@ public:
 	afx_msg void OnBnClickedButtonClear();
 	afx_msg void OnBnClickedButtonExit();
 	
-	afx_msg LONG OnComm(WPARAM ch, LPARAM port);
+	afx_msg LRESULT OnComm(WPARAM ch, LPARAM port);
 
 	afx_msg void OnClose();
 
